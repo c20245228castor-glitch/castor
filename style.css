@@ -1,0 +1,29 @@
+   p {
+       color: rgb(112, 14, 224);
+   }
+
+   h2 {
+       color: darkkhaki;
+       text-decoration: underline;
+   }
+
+   .projects {
+       color: rgb(179, 18, 112);
+   }
+
+   #services {
+       color: cadetblue;
+   }
+
+   body {
+       text-align: center;
+   }
+
+   ul {
+       list-style: none;
+   }
+
+   #contact {
+       color: orange;
+
+   }
