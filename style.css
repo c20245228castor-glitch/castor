@@ -1,85 +1,109 @@
-body {
-    text-align: center;
-}
-
-ul {
-    list-style: none;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-nav ul {
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 50px;
-    margin: 50px;
-}
-
-main section {
-    flex: 1;
-    min-width: 280px;
-    border: 2px solid black;
-    padding: 20px
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav ul {
-        flex-direction: column;
+    body {
         text-align: center;
     }
 
+    ul {
+        list-style: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
 
     main {
-        padding: 15px;
-        margin: 10px;
-        gap: 20px;
-
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 50px;
+        margin: 50px;
     }
 
     main section {
-        flex: 1 1 100%;
-        min-width: 100%;
+        flex: 1;
+        min-width: 280px;
+        border: 2px solid black;
+        padding: 20px
     }
 
-    h1 {
-        font-size: 75px;
-        color: red;
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
-    span {
-        font-size: 75 px;
+    @media (max-width: 600px) {
+        nav {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav ul {
+            flex-direction: column;
+            text-align: center;
+        }
+
+
+        main {
+            padding: 15px;
+            margin: 10px;
+            gap: 20px;
+
+        }
+
+        main section {
+            flex: 1 1 100%;
+            min-width: 100%;
+        }
+
+        h1 {
+            font-size: 75px;
+            color: red;
+        }
+
+        span {
+            font-size: 75 px;
+            color: green;
+        }
+    }
+
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 48px;
+            color: blue;
+        }
+    }
+
+    nav a {
+        transition: color 0.1s ease;
+    }
+
+    nav a:hover {
         color: green;
     }
-}
 
-@media (max-width: 768px) {
-    h2 {
-        font-size: 48px;
-        color: blue;
+    button {
+        background-color: black;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 10px;
+        transition: background-color 1s ease;
+
+
     }
-}
+
+    button:hover {
+        background-color: pink;
+        color: black;
+    }
