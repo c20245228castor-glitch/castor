@@ -1,56 +1,85 @@
-   p {
-       color: rgb(112, 14, 224);
-   }
+body {
+    text-align: center;
+}
 
-   h2 {
-       color: darkkhaki;
-       text-decoration: underline;
-   }
+ul {
+    list-style: none;
+}
 
-   .projects {
-       color: rgb(179, 18, 112);
-   }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
-   #services {
-       color: cadetblue;
-   }
+nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
 
-   body {
-       text-align: center;
-   }
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px;
+    margin: 50px;
+}
 
-   ul {
-       list-style: none;
-   }
+main section {
+    flex: 1;
+    min-width: 280px;
+    border: 2px solid black;
+    padding: 20px
+}
 
-   #contact {
-       color: orange;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
-   }
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-   nav {
-       display: flex;
-       justify-content: space-between;
-       align-content: center;
-       margin-left: 50px;
-       margin-right: 50px;
-   }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
 
-   nav ul {
-       display: flex;
-       gap: 20px;
-   }
 
-   main {
-       display: flex;
-       flex-wrap: wrap;
-       gap: 50px;
-       padding: 50px;
-   }
+    main {
+        padding: 15px;
+        margin: 10px;
+        gap: 20px;
 
-   main section {
-       flex: 1;
-       min-width: 300px;
-       border: 1px solid black;
-       padding: 20px;
-   }
+    }
+
+    main section {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+
+    h1 {
+        font-size: 75px;
+        color: red;
+    }
+
+    span {
+        font-size: 75 px;
+        color: green;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 48px;
+        color: blue;
+    }
+}
