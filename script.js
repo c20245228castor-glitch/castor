@@ -25,7 +25,10 @@ const contactHeading = document.querySelector("#contact h2");
 console.log(contactHeading);
 
 
-const projectHeading = document.querySelector("#services h2");
+const servicesHeading = document.querySelector("#services h2");
+console.log(servicesHeading);
+
+const projectHeading = document.querySelector("#projects h2");
 console.log(projectHeading);
 
 
@@ -35,3 +38,11 @@ console.log(projectHeading);
 heading.textContent = "My portfolio";
 contactHeading.textContent = "Let's Connect!";
 projectHeading.textContent = "My Projects";
+
+heading.style.color = "purple";
+heading.style.backgroundColor = "yellow";
+contactHeading.style.color = "purple";
+projectHeading.style.color = "purple";
+servicesHeading.style.color = "purple";
+
+
